@@ -1,0 +1,75 @@
+{
+  "best_model": "Linear SVM",
+  "best_accuracy": 89.72,
+  "classes": [
+    "sadness",
+    "anger",
+    "love",
+    "surprise",
+    "fear",
+    "joy"
+  ],
+  "mapping": {
+    "sadness": 0,
+    "anger": 1,
+    "love": 2,
+    "surprise": 3,
+    "fear": 4,
+    "joy": 5
+  },
+  "reverse_mapping": {
+    "0": "sadness",
+    "1": "anger",
+    "2": "love",
+    "3": "surprise",
+    "4": "fear",
+    "5": "joy"
+  },
+  "total_samples": 16000,
+  "train_samples": 12800,
+  "test_samples": 3200,
+  "model_comparison": [
+    {
+      "model": "Linear SVM",
+      "vectorizer": "TF-IDF",
+      "accuracy": 89.72,
+      "status": "Best \u2b50",
+      "isBest": true
+    },
+    {
+      "model": "Logistic Regression",
+      "vectorizer": "TF-IDF",
+      "accuracy": 87.19,
+      "status": "Compared",
+      "isBest": false
+    },
+    {
+      "model": "SGD Classifier",
+      "vectorizer": "TF-IDF",
+      "accuracy": 84.75,
+      "status": "Compared",
+      "isBest": false
+    },
+    {
+      "model": "Random Forest",
+      "vectorizer": "TF-IDF",
+      "accuracy": 88.53,
+      "status": "Compared",
+      "isBest": false
+    },
+    {
+      "model": "Multinomial Naive Bayes",
+      "vectorizer": "Bag of Words",
+      "accuracy": 76.75,
+      "status": "Good",
+      "isBest": false
+    },
+    {
+      "model": "Multinomial Naive Bayes",
+      "vectorizer": "TF-IDF",
+      "accuracy": 74.0,
+      "status": "Baseline",
+      "isBest": false
+    }
+  ]
+}
